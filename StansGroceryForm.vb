@@ -2,7 +2,7 @@
 'RCET0265
 'Fall2020
 'StansGrocery
-'
+'https://github.com/justinehoffa/StansGrocery
 
 Option Strict On
 Option Explicit On
