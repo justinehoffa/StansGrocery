@@ -81,11 +81,11 @@ Public Class StansGroceryForm
 
         array4 = array3
 
-        For i = 0 To UBound(array3) - 1
-            For j = 0 To 2
-                DisplayListBox.Items.Add(array3(i, j))
-            Next
-        Next
+        'For i = 0 To UBound(array3) - 1
+        '    For j = 0 To 2
+        '        DisplayListBox.Items.Add(array3(i, j))
+        '    Next
+        'Next
 
     End Sub
 
@@ -94,5 +94,16 @@ Public Class StansGroceryForm
         SplashScreenForm.Hide()
     End Sub
 
+    Private Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
+        Dim match1 As Match
 
+        DisplayListBox.Items.Clear()
+
+        For i = 0 To UBound(array4)
+            match1 = Regex.Match(array4(i, 0), "\b" & LookUpItemTextBox.Text, RegexOptions.IgnoreCase)
+            If match1.Success = True Then
+                DisplayListBox.Items.Add(array4(i, 0))
+            End If
+        Next
+    End Sub
 End Class
