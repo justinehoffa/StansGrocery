@@ -69,12 +69,20 @@ Public Class StansGroceryForm
             End If
         Next
 
+        For i = 0 To UBound(array4) - 1
+            For j = 0 To 2
+                array4(i, j) = Regex.Replace(array4(i, j), "✷", "/")
+                array4(i, j) = Regex.Replace(array4(i, j), "ITM", "")
+                array4(i, j) = Regex.Replace(array4(i, j), "CAT", "")
+                array4(i, j) = Regex.Replace(array4(i, j), "LOC", "")
+            Next
+        Next
+
         For i = 0 To UBound(array4)
             For j = 0 To 2
                 DisplayListBox.Items.Add(array4(i, j))
             Next
         Next
-
 
     End Sub
 
