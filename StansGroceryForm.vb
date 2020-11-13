@@ -12,6 +12,8 @@ Imports System.Text.RegularExpressions
 
 Public Class StansGroceryForm
 
+    Dim array5(255, 2) As String
+
     Private Sub StansGroceryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim file As String = My.Resources.StansGrocery
 
@@ -78,6 +80,8 @@ Public Class StansGroceryForm
             Next
         Next
 
+        array5 = array4
+
         For i = 0 To UBound(array4)
             For j = 0 To 2
                 DisplayListBox.Items.Add(array4(i, j))
@@ -90,4 +94,6 @@ Public Class StansGroceryForm
         Timer1.Stop()
         SplashScreenForm.Hide()
     End Sub
+
+
 End Class
