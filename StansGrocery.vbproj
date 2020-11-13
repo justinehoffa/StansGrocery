@@ -141,5 +141,8 @@
   <ItemGroup>
     <None Include="Resources\stans.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="StansGrocery.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

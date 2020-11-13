@@ -31,7 +31,7 @@ Partial Class SplashScreenForm
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Name = "SplashScreenForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Stan's Grocery"
+        Me.Text = "Welcome to Stan's Grocery"
         Me.TopMost = True
         Me.ResumeLayout(False)
 
