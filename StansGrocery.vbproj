@@ -73,10 +73,33 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SplashScreenForm.Designer.vb">
-      <DependentUpon>SplashScreenForm.vb</DependentUpon>
+    <Compile Include="AboutBoxForm.Designer.vb">
+      <DependentUpon>AboutBoxForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreenForm.vb">
+    <Compile Include="AboutBoxForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StansGrocerySplashScreen.Designer.vb">
+      <DependentUpon>StansGrocerySplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StansGrocerySplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StansGroceryForm.vb">
@@ -103,14 +126,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutBoxForm.resx">
+      <DependentUpon>AboutBoxForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreenForm.resx">
-      <DependentUpon>SplashScreenForm.vb</DependentUpon>
+    <EmbeddedResource Include="Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StansGrocerySplashScreen.resx">
+      <DependentUpon>StansGrocerySplashScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StansGroceryForm.resx">
       <DependentUpon>StansGroceryForm.vb</DependentUpon>
@@ -133,16 +170,19 @@
     <None Include="My Project\temp.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\StansGrocery.txt" />
+    <None Include="Resources\Untitled.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\StansGrocery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StansGrocery.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stans.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="StansGrocery.txt" />
+    <None Include="Resources\StansGrocery.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
